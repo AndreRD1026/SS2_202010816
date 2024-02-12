@@ -2,11 +2,11 @@ USE SS2_Practica1;
 
 SELECT 
     nombre_pais AS Pais,
-    COALESCE([1], '') AS Año_1,
-    COALESCE([2], '') AS Año_2,
-    COALESCE([3], '') AS Año_3,
-    COALESCE([4], '') AS Año_4,
-    COALESCE([5], '') AS Año_5
+    COALESCE([1], '') AS Anio_1,
+    COALESCE([2], '') AS Anio_2,
+    COALESCE([3], '') AS Anio_3,
+    COALESCE([4], '') AS Anio_4,
+    COALESCE([5], '') AS Anio_5
 FROM 
     (
         SELECT 
