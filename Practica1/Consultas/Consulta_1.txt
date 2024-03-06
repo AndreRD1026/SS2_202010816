@@ -1,0 +1,26 @@
+Changed database context to 'SS2_Practica1'.
+Total_de_tsunamis
+-----------------
+             2160
+
+(1 rows affected)
+Total_de_paises
+---------------
+            104
+
+(1 rows affected)
+Total_de_locaciones
+-------------------
+                797
+
+(1 rows affected)
+Total_de_fechas
+---------------
+            219
+
+(1 rows affected)
+Total_de_causas
+---------------
+             12
+
+(1 rows affected)

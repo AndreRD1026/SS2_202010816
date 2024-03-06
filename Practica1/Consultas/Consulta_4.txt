@@ -1,0 +1,109 @@
+Changed database context to 'SS2_Practica1'.
+Pais                                                                                                 Promedio_Total_Damage   
+---------------------------------------------------------------------------------------------------- ------------------------
+CHINA                                                                                                      3739.1628695652175
+IRAN                                                                                                       2403.3333333333335
+JAPAN                                                                                                      1440.4666666666667
+HAITI                                                                                                      1333.3333333333333
+MONTENEGRO                                                                                                              900.0
+ALGERIA                                                                                                    850.91666666666663
+TURKEY                                                                                                     816.79999999999995
+ECUADOR                                                                                                                 550.0
+GUATEMALA                                                                                                  392.83333333333331
+CHILE                                                                                                               235.06394
+NEW ZEALAND                                                                                                220.05813953488371
+USA                                                                                                        179.12436153846153
+MEXICO                                                                                                     146.69491525423729
+EL SALVADOR                                                                                                            94.125
+INDONESIA                                                                                                  65.327850877192986
+MOROCCO                                                                                                                  60.0
+GREECE                                                                                                     56.023008849557527
+USA TERRITORY                                                                                              45.826086956521742
+COSTA RICA                                                                                                 39.230769230769234
+BANGLADESH                                                                                                 26.300000000000001
+SAMOA                                                                                                                 17.8125
+PERU                                                                                                       14.633018867924527
+PAKISTAN                                                                                                   13.313750000000001
+VENEZUELA                                                                                                  11.050000000000001
+ITALY                                                                                                      6.7692307692307692
+JAMAICA                                                                                                                   6.0
+NICARAGUA                                                                                                                 5.0
+SPAIN                                                                                                      3.6666666666666665
+RUSSIA                                                                                                     3.3611111111111112
+PHILIPPINES                                                                                                1.9311898734177215
+INDIA                                                                                                      1.3333333333333333
+PAPUA NEW GUINEA                                                                                           1.2185066666666666
+COLOMBIA                                                                                                                  1.0
+SOLOMON ISLANDS                                                                                           0.78260869565217395
+SOUTH KOREA                                                                                               0.40000000000000002
+PORTUGAL                                                                                                               0.3125
+TONGA                                                                                                   6.3157894736842107E-2
+HONDURAS                                                                                                5.9999999999999998E-2
+CANADA                                                                                                  4.0000000000000001E-2
+PANAMA                                                                                                  7.5000000000000015E-3
+MONTSERRAT                                                                                                                0.0
+SAINT VINCENT AND THE GRENADINES                                                                                          0.0
+NORTHWEST PACIFIC OCEAN                                                                                                   0.0
+NORWAY                                                                                                                    0.0
+PACIFIC OCEAN                                                                                                             0.0
+MYANMAR (BURMA)                                                                                                           0.0
+NAURU                                                                                                                     0.0
+NEPAL                                                                                                                     0.0
+NETHERLANDS                                                                                                               0.0
+NEW CALEDONIA                                                                                                             0.0
+ISRAEL                                                                                                                    0.0
+MICRONESIA, FED. STATES OF                                                                                                0.0
+JORDAN                                                                                                                    0.0
+KENYA                                                                                                                     0.0
+KERMADEC ISLANDS                                                                                                          0.0
+KOREA                                                                                                                     0.0
+LEBANON                                                                                                                   0.0
+MARSHALL ISLANDS, REP. OF                                                                                                 0.0
+MARTINIQUE (FRENCH TERRITORY)                                                                                             0.0
+ALBANIA                                                                                                                   0.0
+BULGARIA                                                                                                                  0.0
+CAMEROON                                                                                                                  0.0
+ANTARCTICA                                                                                                                0.0
+ANTIGUA AND BARBUDA                                                                                                       0.0
+ARGENTINA                                                                                                                 0.0
+ATLANTIC OCEAN                                                                                                            0.0
+AUSTRALIA                                                                                                                 0.0
+CONGO                                                                                                                     0.0
+COOK ISLANDS                                                                                                              0.0
+CROATIA                                                                                                                   0.0
+CUBA                                                                                                                      0.0
+CYPRUS                                                                                                                    0.0
+DENMARK                                                                                                                   0.0
+DOMINICAN REPUBLIC                                                                                                        0.0
+ICELAND                                                                                                                   0.0
+HOLLAND                                                                                                                   0.0
+EGYPT                                                                                                                     0.0
+GREENLAND                                                                                                                 0.0
+GRENADA                                                                                                                   0.0
+GUADELOUPE (FRENCH TERRITORY)                                                                                             0.0
+ERITREA                                                                                                                   0.0
+FIJI                                                                                                                      0.0
+FRANCE                                                                                                                    0.0
+FRENCH POLYNESIA                                                                                                          0.0
+GEORGIA                                                                                                                   0.0
+GHANA                                                                                                                     0.0
+TRINIDAD AND TOBAGO                                                                                                       0.0
+TUNISIA                                                                                                                   0.0
+TURKMENISTAN                                                                                                              0.0
+UK                                                                                                                        0.0
+UK TERRITORY                                                                                                              0.0
+UKRAINE                                                                                                                   0.0
+URUGUAY                                                                                                                   0.0
+SOUTH AFRICA                                                                                                              0.0
+SCOTLAND                                                                                                                  0.0
+SRI LANKA                                                                                                                 0.0
+SUDAN                                                                                                                     0.0
+SWEDEN                                                                                                                    0.0
+SWITZERLAND                                                                                                               0.0
+TAIWAN                                                                                                                    0.0
+TOGO                                                                                                                      0.0
+VIETNAM                                                                                                                   0.0
+WALLIS AND FUTUNA (FRENCH TERRITORY)                                                                                      0.0
+VANUATU                                                                                                                   0.0
+
+(104 rows affected)

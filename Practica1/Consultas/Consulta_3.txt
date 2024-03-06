@@ -1,0 +1,109 @@
+Changed database context to 'SS2_Practica1'.
+Pais                                                                                                 Anio_1      Anio_2      Anio_3      Anio_4      Anio_5     
+---------------------------------------------------------------------------------------------------- ----------- ----------- ----------- ----------- -----------
+ANTIGUA AND BARBUDA                                                                                         1802           0           0           0           0
+UK TERRITORY                                                                                                1821        1983        2016        2021           0
+SOUTH KOREA                                                                                                 1926        2006        2007        2008        2010
+MYANMAR (BURMA)                                                                                             1930           0           0           0           0
+GUATEMALA                                                                                                   1902        1902        1902        1950        1976
+ATLANTIC OCEAN                                                                                              1894        1941        1969        1975           0
+VIETNAM                                                                                                     1877        1882        1899        1923        1978
+USA                                                                                                         1806        1811        1811        1812        1812
+NEW ZEALAND                                                                                                 1810        1826        1831        1839        1840
+NAURU                                                                                                       1936           0           0           0           0
+EGYPT                                                                                                       1870        1879        1969        1995           0
+SCOTLAND                                                                                                    2015           0           0           0           0
+ITALY                                                                                                       1804        1805        1806        1808        1809
+NETHERLANDS                                                                                                 1837        2017           0           0           0
+GREENLAND                                                                                                   1952        1954        2000        2012        2017
+CAMEROON                                                                                                    1984        1986           0           0           0
+JORDAN                                                                                                      2004           0           0           0           0
+SRI LANKA                                                                                                   1882           0           0           0           0
+INDONESIA                                                                                                   1802        1814        1815        1815        1815
+JAMAICA                                                                                                     1812        1881        1893        1896        1907
+PHILIPPINES                                                                                                 1824        1828        1830        1830        1840
+CUBA                                                                                                        1852        1931        1932        1939        2020
+ICELAND                                                                                                     1872        1896        1918        1924        1934
+CYPRUS                                                                                                      1941        1953           0           0           0
+SWITZERLAND                                                                                                 1996           0           0           0           0
+KOREA                                                                                                       1923           0           0           0           0
+ALGERIA                                                                                                     1802        1856        1856        1857        1885
+ECUADOR                                                                                                     1827        1906        1906        1933        1958
+SAMOA                                                                                                       1883        1905        1906        1907        1907
+EL SALVADOR                                                                                                 1859        1859        1902        1906        1915
+LEBANON                                                                                                     1822           0           0           0           0
+MONTENEGRO                                                                                                  1853        1979        1979           0           0
+AUSTRALIA                                                                                                   1805        1836        1852        1858        1859
+MEXICO                                                                                                      1810        1820        1833        1834        1837
+ALBANIA                                                                                                     1833        1851        1866        1866        1866
+SWEDEN                                                                                                      1969           0           0           0           0
+HONDURAS                                                                                                    1855        1856        1997        2009        2018
+NICARAGUA                                                                                                   1844        1901        1919        1951        1992
+KENYA                                                                                                       1930           0           0           0           0
+UKRAINE                                                                                                     1869        1908        1919        1927        1927
+TRINIDAD AND TOBAGO                                                                                         1825        1831        1911           0           0
+CHINA                                                                                                       1833        1855        1882        1888        1917
+ARGENTINA                                                                                                   1954           0           0           0           0
+FIJI                                                                                                        1881        1884        1953        1975        1979
+SOLOMON ISLANDS                                                                                             1897        1926        1926        1931        1934
+PERU                                                                                                        1806        1828        1833        1840        1841
+MICRONESIA, FED. STATES OF                                                                                  1837        1912        1912        1925           0
+INDIA                                                                                                       1819        1845        1847        1868        1876
+NEW CALEDONIA                                                                                               1875        1901        1936        1942        1995
+CROATIA                                                                                                     1802        1823        1823        1838        1843
+GREECE                                                                                                      1804        1804        1805        1810        1817
+RUSSIA                                                                                                      1827        1841        1848        1849        1853
+UK                                                                                                          1802        1843        1858        1868        1926
+ISRAEL                                                                                                      1837        1927           0           0           0
+URUGUAY                                                                                                     1884        1888        1892           0           0
+TONGA                                                                                                       1853        1865        1881        1889        1892
+CANADA                                                                                                      1842        1848        1863        1864        1870
+BULGARIA                                                                                                    1901        2007           0           0           0
+MONTSERRAT                                                                                                  1897        1997        1999        2003        2006
+TOGO                                                                                                        1905        1911        1933           0           0
+SUDAN                                                                                                       1857           0           0           0           0
+SAINT VINCENT AND THE GRENADINES                                                                            1902           0           0           0           0
+HAITI                                                                                                       1842        1860        1864        1887        2010
+TUNISIA                                                                                                     1894        1905           0           0           0
+PACIFIC OCEAN                                                                                               1958           0           0           0           0
+NORWAY                                                                                                      1810        1819        1867        1880        1888
+HOLLAND                                                                                                     1830           0           0           0           0
+FRANCE                                                                                                      1812        1854        1854        1855        1862
+MARSHALL ISLANDS, REP. OF                                                                                   1906           0           0           0           0
+GRENADA                                                                                                     1939        1965           0           0           0
+DOMINICAN REPUBLIC                                                                                          1897        1946        1946        1953           0
+JAPAN                                                                                                       1802        1804        1808        1808        1810
+TURKMENISTAN                                                                                                1895           0           0           0           0
+MOROCCO                                                                                                     1960        2016           0           0           0
+GEORGIA                                                                                                     1905           0           0           0           0
+SPAIN                                                                                                       1804        1860        1930        1941        1978
+GUADELOUPE (FRENCH TERRITORY)                                                                               1824        1843        1843        1870        1969
+TURKEY                                                                                                      1822        1829        1846        1846        1851
+PAPUA NEW GUINEA                                                                                            1857        1873        1875        1878        1888
+COOK ISLANDS                                                                                                1904        1909        1926        2010           0
+NORTHWEST PACIFIC OCEAN                                                                                     1850        1854           0           0           0
+ERITREA                                                                                                     1884           0           0           0           0
+VENEZUELA                                                                                                   1802        1812        1853        1867        1868
+KERMADEC ISLANDS                                                                                            2007        2017           0           0           0
+BANGLADESH                                                                                                  1842        1874        1886        1988        1988
+CONGO                                                                                                       1820        1938           0           0           0
+GHANA                                                                                                       1862        1906        1939           0           0
+DENMARK                                                                                                     1825           0           0           0           0
+PAKISTAN                                                                                                    1935        1945        1974        2013           0
+MARTINIQUE (FRENCH TERRITORY)                                                                               1823        1824        1902        1902        1902
+COLOMBIA                                                                                                    1825        1877        1904        1906        1942
+PANAMA                                                                                                      1873        1882        1884        1904        1913
+ANTARCTICA                                                                                                  1967        1998        2003        2013        2021
+IRAN                                                                                                        1890        1990        2017           0           0
+CHILE                                                                                                       1811        1819        1822        1829        1835
+NEPAL                                                                                                       1934           0           0           0           0
+SOUTH AFRICA                                                                                                1809        1969        1981        2008           0
+FRENCH POLYNESIA                                                                                            1806        1848        1917        1999           0
+WALLIS AND FUTUNA (FRENCH TERRITORY)                                                                        1993           0           0           0           0
+PORTUGAL                                                                                                    1800        1809        1816        1847        1855
+TAIWAN                                                                                                      1853        1867        1882        1903        1917
+USA TERRITORY                                                                                               1809        1819        1825        1837        1849
+COSTA RICA                                                                                                  1821        1822        1854        1854        1905
+VANUATU                                                                                                     1863        1875        1878        1878        1878
+
+(104 rows affected)

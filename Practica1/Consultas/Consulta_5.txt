@@ -1,0 +1,10 @@
+Changed database context to 'SS2_Practica1'.
+Pais                                                                                                 Total_muertes
+---------------------------------------------------------------------------------------------------- -------------
+INDONESIA                                                                                                   365974
+HAITI                                                                                                       323548
+JAPAN                                                                                                       220485
+CHINA                                                                                                        96472
+ITALY                                                                                                        84182
+
+(5 rows affected)

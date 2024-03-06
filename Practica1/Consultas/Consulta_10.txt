@@ -1,0 +1,109 @@
+Changed database context to 'SS2_Practica1'.
+Pais                                                                                                 Promedio_altura_maxima_agua
+---------------------------------------------------------------------------------------------------- ---------------------------
+CAMEROON                                                                                                                    40.0
+GREENLAND                                                                                                     31.655999999999999
+ICELAND                                                                                                                     10.0
+NORWAY                                                                                                        8.8875000000000011
+USA                                                                                                           7.1527692307692252
+KENYA                                                                                                                        6.0
+SWEDEN                                                                                                                       5.0
+HONDURAS                                                                                                      4.8799999999999999
+INDONESIA                                                                                                     4.7047807017543866
+PAKISTAN                                                                                                      4.3925000000000001
+CANADA                                                                                                        4.3895999999999997
+RUSSIA                                                                                                        3.8529999999999998
+CHINA                                                                                                         3.4760869565217392
+ATLANTIC OCEAN                                                                                                3.2475000000000001
+ITALY                                                                                                         3.1087912087912093
+BULGARIA                                                                                                                     3.0
+FRENCH POLYNESIA                                                                                              2.8500000000000001
+PORTUGAL                                                                                                      2.7381249999999997
+CHILE                                                                                                         2.4915333333333334
+SAMOA                                                                                                         2.4862500000000001
+VIETNAM                                                                                                       2.4166666666666665
+PERU                                                                                                          2.2701886792452832
+FIJI                                                                                                           2.245714285714286
+MONTSERRAT                                                                                                                   2.0
+NICARAGUA                                                                                                     1.9133333333333333
+COLOMBIA                                                                                                                   1.875
+JAPAN                                                                                                         1.8381333333333336
+SPAIN                                                                                                         1.7633333333333334
+SOLOMON ISLANDS                                                                                               1.6919565217391304
+TOGO                                                                                                          1.6666666666666667
+IRAN                                                                                                          1.6666666666666667
+PAPUA NEW GUINEA                                                                                               1.596133333333333
+MEXICO                                                                                                        1.5694915254237289
+USA TERRITORY                                                                                                 1.5617391304347823
+SOUTH AFRICA                                                                                                  1.4350000000000001
+DOMINICAN REPUBLIC                                                                                            1.4149999999999998
+HAITI                                                                                                         1.3683333333333334
+VANUATU                                                                                                       1.3319444444444444
+FRANCE                                                                                                                      1.25
+NEW ZEALAND                                                                                                   1.1158139534883722
+PHILIPPINES                                                                                                    1.108227848101266
+ALGERIA                                                                                                       1.0766666666666667
+MYANMAR (BURMA)                                                                                               1.0600000000000001
+VENEZUELA                                                                                                     1.0539999999999998
+GREECE                                                                                                        1.0108849557522126
+EGYPT                                                                                                                        1.0
+GRENADA                                                                                                                      1.0
+ARGENTINA                                                                                                                    1.0
+NETHERLANDS                                                                                                                  1.0
+JORDAN                                                                                                                       1.0
+SAINT VINCENT AND THE GRENADINES                                                                                             1.0
+TONGA                                                                                                        0.97631578947368403
+ECUADOR                                                                                                      0.95833333333333337
+NEW CALEDONIA                                                                                                0.90947368421052632
+TAIWAN                                                                                                       0.83904761904761893
+TURKEY                                                                                                       0.83400000000000007
+EL SALVADOR                                                                                                  0.82124999999999992
+COOK ISLANDS                                                                                                                0.75
+MARTINIQUE (FRENCH TERRITORY)                                                                                0.66666666666666663
+UKRAINE                                                                                                       0.6166666666666667
+JAMAICA                                                                                                      0.59199999999999997
+SOUTH KOREA                                                                                                  0.59000000000000008
+UK TERRITORY                                                                                                 0.56000000000000005
+AUSTRALIA                                                                                                    0.53476190476190488
+MONTENEGRO                                                                                                   0.53333333333333333
+ISRAEL                                                                                                                       0.5
+TUNISIA                                                                                                                      0.5
+SWITZERLAND                                                                                                                  0.5
+INDIA                                                                                                        0.48399999999999999
+GUADELOUPE (FRENCH TERRITORY)                                                                                0.47249999999999998
+PANAMA                                                                                                       0.43999999999999995
+UK                                                                                                           0.39999999999999997
+COSTA RICA                                                                                                   0.36076923076923079
+KERMADEC ISLANDS                                                                                             0.26500000000000001
+ANTARCTICA                                                                                                   0.23999999999999999
+CUBA                                                                                                         0.22200000000000003
+SCOTLAND                                                                                                     0.17999999999999999
+GUATEMALA                                                                                                    0.11166666666666665
+PACIFIC OCEAN                                                                                                0.10000000000000001
+ALBANIA                                                                                                    6.6000000000000003E-2
+MOROCCO                                                                                                                     0.01
+CROATIA                                                                                                    3.3333333333333335E-3
+CONGO                                                                                                                        0.0
+CYPRUS                                                                                                                       0.0
+DENMARK                                                                                                                      0.0
+ANTIGUA AND BARBUDA                                                                                                          0.0
+BANGLADESH                                                                                                                   0.0
+HOLLAND                                                                                                                      0.0
+ERITREA                                                                                                                      0.0
+GEORGIA                                                                                                                      0.0
+GHANA                                                                                                                        0.0
+MICRONESIA, FED. STATES OF                                                                                                   0.0
+KOREA                                                                                                                        0.0
+LEBANON                                                                                                                      0.0
+MARSHALL ISLANDS, REP. OF                                                                                                    0.0
+NORTHWEST PACIFIC OCEAN                                                                                                      0.0
+NAURU                                                                                                                        0.0
+NEPAL                                                                                                                        0.0
+SRI LANKA                                                                                                                    0.0
+SUDAN                                                                                                                        0.0
+TRINIDAD AND TOBAGO                                                                                                          0.0
+TURKMENISTAN                                                                                                                 0.0
+URUGUAY                                                                                                                      0.0
+WALLIS AND FUTUNA (FRENCH TERRITORY)                                                                                         0.0
+
+(104 rows affected)
