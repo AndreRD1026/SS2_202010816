@@ -89,7 +89,7 @@ CREATE TABLE Venta (
 	Id_Departamento int,
 	Fecha Date, 
 	Unidades int,
-	PrecioUnitario decimal,
+	PrecioUnitario decimal (10,2),
 
 	FOREIGN KEY (Id_Cliente) REFERENCES Cliente (IdCliente),
 	FOREIGN KEY (Id_Vendedor) REFERENCES Vendedor (IdVendedor),
