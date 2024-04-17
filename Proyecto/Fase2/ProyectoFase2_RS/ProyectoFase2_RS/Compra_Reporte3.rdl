@@ -10,14 +10,14 @@
         <IntegratedSecurity>true</IntegratedSecurity>
       </ConnectionProperties>
       <rd:SecurityType>Integrated</rd:SecurityType>
-      <rd:DataSourceID>56dec655-c076-492f-95eb-bf0370a90d8d</rd:DataSourceID>
+      <rd:DataSourceID>f3fdf1df-ff1b-4223-bb84-3dafe392447c</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
         <DataSourceName>DataSource1</DataSourceName>
-        <CommandText> SELECT NON EMPTY { [Measures].[Unidades], [Measures].[Costo U] } ON COLUMNS, NON EMPTY { ([Sucursal_Compra].[Nombre Sucursal].[Nombre Sucursal].ALLMEMBERS * [Categoria_Compra].[Nombre Categoria].[Nombre Categoria].ALLMEMBERS * [Producto_Compra].[Nombre Producto].[Nombre Producto].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [Cubo_Compra] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</CommandText>
+        <CommandText>SELECT NON EMPTY { [Measures].[Unidades] } ON COLUMNS, NON EMPTY { ([Fecha_Compra].[Year -  Half Year -  Month -  Date].[Date].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [Cubo_Compra] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</CommandText>
         <rd:DesignerState>
           <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
             <CommandType>MDX</CommandType>
@@ -26,35 +26,46 @@
                 <Items>
                   <Item>
                     <ID xsi:type="Level">
-                      <DimensionName>Sucursal_Compra</DimensionName>
-                      <HierarchyName>Nombre Sucursal</HierarchyName>
-                      <HierarchyUniqueName>[Sucursal_Compra].[Nombre Sucursal]</HierarchyUniqueName>
-                      <LevelName>Nombre Sucursal</LevelName>
-                      <UniqueName>[Sucursal_Compra].[Nombre Sucursal].[Nombre Sucursal]</UniqueName>
+                      <DimensionName>Fecha_Compra</DimensionName>
+                      <HierarchyName>Year -  Half Year -  Month -  Date</HierarchyName>
+                      <HierarchyUniqueName>[Fecha_Compra].[Year -  Half Year -  Month -  Date]</HierarchyUniqueName>
+                      <LevelName>Year</LevelName>
+                      <UniqueName>[Fecha_Compra].[Year -  Half Year -  Month -  Date].[Year]</UniqueName>
                     </ID>
-                    <ItemCaption>Nombre Sucursal</ItemCaption>
+                    <ItemCaption>Year</ItemCaption>
                     <UniqueName>true</UniqueName>
                   </Item>
                   <Item>
                     <ID xsi:type="Level">
-                      <DimensionName>Categoria_Compra</DimensionName>
-                      <HierarchyName>Nombre Categoria</HierarchyName>
-                      <HierarchyUniqueName>[Categoria_Compra].[Nombre Categoria]</HierarchyUniqueName>
-                      <LevelName>Nombre Categoria</LevelName>
-                      <UniqueName>[Categoria_Compra].[Nombre Categoria].[Nombre Categoria]</UniqueName>
+                      <DimensionName>Fecha_Compra</DimensionName>
+                      <HierarchyName>Year -  Half Year -  Month -  Date</HierarchyName>
+                      <HierarchyUniqueName>[Fecha_Compra].[Year -  Half Year -  Month -  Date]</HierarchyUniqueName>
+                      <LevelName>Half Year</LevelName>
+                      <UniqueName>[Fecha_Compra].[Year -  Half Year -  Month -  Date].[Half Year]</UniqueName>
                     </ID>
-                    <ItemCaption>Nombre Categoria</ItemCaption>
+                    <ItemCaption>Half Year</ItemCaption>
                     <UniqueName>true</UniqueName>
                   </Item>
                   <Item>
                     <ID xsi:type="Level">
-                      <DimensionName>Producto_Compra</DimensionName>
-                      <HierarchyName>Nombre Producto</HierarchyName>
-                      <HierarchyUniqueName>[Producto_Compra].[Nombre Producto]</HierarchyUniqueName>
-                      <LevelName>Nombre Producto</LevelName>
-                      <UniqueName>[Producto_Compra].[Nombre Producto].[Nombre Producto]</UniqueName>
+                      <DimensionName>Fecha_Compra</DimensionName>
+                      <HierarchyName>Year -  Half Year -  Month -  Date</HierarchyName>
+                      <HierarchyUniqueName>[Fecha_Compra].[Year -  Half Year -  Month -  Date]</HierarchyUniqueName>
+                      <LevelName>Month</LevelName>
+                      <UniqueName>[Fecha_Compra].[Year -  Half Year -  Month -  Date].[Month]</UniqueName>
                     </ID>
-                    <ItemCaption>Nombre Producto</ItemCaption>
+                    <ItemCaption>Month</ItemCaption>
+                    <UniqueName>true</UniqueName>
+                  </Item>
+                  <Item>
+                    <ID xsi:type="Level">
+                      <DimensionName>Fecha_Compra</DimensionName>
+                      <HierarchyName>Year -  Half Year -  Month -  Date</HierarchyName>
+                      <HierarchyUniqueName>[Fecha_Compra].[Year -  Half Year -  Month -  Date]</HierarchyUniqueName>
+                      <LevelName>Date</LevelName>
+                      <UniqueName>[Fecha_Compra].[Year -  Half Year -  Month -  Date].[Date]</UniqueName>
+                    </ID>
+                    <ItemCaption>Date</ItemCaption>
                     <UniqueName>true</UniqueName>
                   </Item>
                   <Item>
@@ -63,22 +74,6 @@
                       <UniqueName>[Measures].[Unidades]</UniqueName>
                     </ID>
                     <ItemCaption>Unidades</ItemCaption>
-                    <BackColor>true</BackColor>
-                    <ForeColor>true</ForeColor>
-                    <FontFamily>true</FontFamily>
-                    <FontSize>true</FontSize>
-                    <FontWeight>true</FontWeight>
-                    <FontStyle>true</FontStyle>
-                    <FontDecoration>true</FontDecoration>
-                    <FormattedValue>true</FormattedValue>
-                    <FormatString>true</FormatString>
-                  </Item>
-                  <Item>
-                    <ID xsi:type="Measure">
-                      <MeasureName>Costo U</MeasureName>
-                      <UniqueName>[Measures].[Costo U]</UniqueName>
-                    </ID>
-                    <ItemCaption>Costo U</ItemCaption>
                     <BackColor>true</BackColor>
                     <ForeColor>true</ForeColor>
                     <FontFamily>true</FontFamily>
@@ -103,31 +98,31 @@
               </QueryProperties>
             </QuerySpecification>
             <Query>
-              <Statement> SELECT NON EMPTY { [Measures].[Unidades], [Measures].[Costo U] } ON COLUMNS, NON EMPTY { ([Sucursal_Compra].[Nombre Sucursal].[Nombre Sucursal].ALLMEMBERS * [Categoria_Compra].[Nombre Categoria].[Nombre Categoria].ALLMEMBERS * [Producto_Compra].[Nombre Producto].[Nombre Producto].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [Cubo_Compra] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</Statement>
+              <Statement> SELECT NON EMPTY { [Measures].[Unidades] } ON COLUMNS, NON EMPTY { ([Fecha_Compra].[Year -  Half Year -  Month -  Date].[Date].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [Cubo_Compra] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</Statement>
               <ParameterDefinitions />
             </Query>
           </QueryDefinition>
         </rd:DesignerState>
       </Query>
       <Fields>
-        <Field Name="Nombre_Sucursal">
-          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Sucursal_Compra].[Nombre Sucursal].[Nombre Sucursal]" /&gt;</DataField>
+        <Field Name="Year">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Fecha_Compra].[Year -  Half Year -  Month -  Date].[Year]" /&gt;</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Nombre_Categoria">
-          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Categoria_Compra].[Nombre Categoria].[Nombre Categoria]" /&gt;</DataField>
+        <Field Name="Half_Year">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Fecha_Compra].[Year -  Half Year -  Month -  Date].[Half Year]" /&gt;</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Nombre_Producto">
-          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Producto_Compra].[Nombre Producto].[Nombre Producto]" /&gt;</DataField>
+        <Field Name="Month">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Fecha_Compra].[Year -  Half Year -  Month -  Date].[Month]" /&gt;</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Date">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Level" UniqueName="[Fecha_Compra].[Year -  Half Year -  Month -  Date].[Date]" /&gt;</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Unidades">
           <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Unidades]" /&gt;</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Costo_U">
-          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Costo U]" /&gt;</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
       </Fields>
@@ -144,7 +139,7 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Compra_Reporte2</Value>
+                    <Value>Compra_Reporte3</Value>
                     <Style>
                       <FontFamily>Segoe UI Light</FontFamily>
                       <FontSize>24pt</FontSize>
@@ -169,25 +164,25 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>6.19792in</Width>
+                  <Width>6.08208in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>2.32556in</Height>
+                  <Height>3.6625in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
                         <Rectangle Name="List1_Contents">
                           <ReportItems>
-                            <Textbox Name="Nombre_Sucursal">
+                            <Textbox Name="Year">
                               <CanGrow>true</CanGrow>
                               <KeepTogether>true</KeepTogether>
                               <Paragraphs>
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=Fields!Nombre_Sucursal.Value</Value>
+                                      <Value>=Fields!Year.Value</Value>
                                       <Style>
                                         <FontFamily />
                                         <FontSize>14pt</FontSize>
@@ -197,7 +192,7 @@
                                   <Style />
                                 </Paragraph>
                               </Paragraphs>
-                              <rd:DefaultName>Nombre_Sucursal</rd:DefaultName>
+                              <rd:DefaultName>Year</rd:DefaultName>
                               <Height>0.27in</Height>
                               <Width>5in</Width>
                               <Style>
@@ -214,7 +209,7 @@
                                   <TablixCornerRow>
                                     <TablixCornerCell>
                                       <CellContents>
-                                        <Textbox Name="textbox4">
+                                        <Textbox Name="textbox3">
                                           <CanGrow>true</CanGrow>
                                           <KeepTogether>true</KeepTogether>
                                           <Paragraphs>
@@ -231,7 +226,7 @@
                                               <Style />
                                             </Paragraph>
                                           </Paragraphs>
-                                          <rd:DefaultName>textbox4</rd:DefaultName>
+                                          <rd:DefaultName>textbox3</rd:DefaultName>
                                           <Style>
                                             <Border>
                                               <Color>LightGrey</Color>
@@ -243,20 +238,13 @@
                                             <PaddingBottom>2pt</PaddingBottom>
                                           </Style>
                                         </Textbox>
-                                        <RowSpan>2</RowSpan>
                                       </CellContents>
                                     </TablixCornerCell>
-                                  </TablixCornerRow>
-                                  <TablixCornerRow>
-                                    <TablixCornerCell />
                                   </TablixCornerRow>
                                 </TablixCornerRows>
                               </TablixCorner>
                               <TablixBody>
                                 <TablixColumns>
-                                  <TablixColumn>
-                                    <Width>1in</Width>
-                                  </TablixColumn>
                                   <TablixColumn>
                                     <Width>1in</Width>
                                   </TablixColumn>
@@ -302,43 +290,6 @@
                                         </CellContents>
                                         <DataElementOutput>Output</DataElementOutput>
                                       </TablixCell>
-                                      <TablixCell>
-                                        <CellContents>
-                                          <Textbox Name="textbox3">
-                                            <CanGrow>true</CanGrow>
-                                            <KeepTogether>true</KeepTogether>
-                                            <Paragraphs>
-                                              <Paragraph>
-                                                <TextRuns>
-                                                  <TextRun>
-                                                    <Value>=Sum(Fields!Costo_U.Value)</Value>
-                                                    <Style>
-                                                      <FontFamily />
-                                                      <Color>#333333</Color>
-                                                    </Style>
-                                                  </TextRun>
-                                                </TextRuns>
-                                                <Style />
-                                              </Paragraph>
-                                            </Paragraphs>
-                                            <rd:DefaultName>textbox3</rd:DefaultName>
-                                            <Style>
-                                              <Border>
-                                                <Color>LightGrey</Color>
-                                              </Border>
-                                              <BottomBorder>
-                                                <Style>Solid</Style>
-                                              </BottomBorder>
-                                              <FontFamily />
-                                              <PaddingLeft>2pt</PaddingLeft>
-                                              <PaddingRight>2pt</PaddingRight>
-                                              <PaddingTop>2pt</PaddingTop>
-                                              <PaddingBottom>2pt</PaddingBottom>
-                                            </Style>
-                                          </Textbox>
-                                        </CellContents>
-                                        <DataElementOutput>Output</DataElementOutput>
-                                      </TablixCell>
                                     </TablixCells>
                                   </TablixRow>
                                 </TablixRows>
@@ -346,27 +297,36 @@
                               <TablixColumnHierarchy>
                                 <TablixMembers>
                                   <TablixMember>
-                                    <Group Name="matrix1_Nombre_Categoria">
+                                    <Group Name="matrix1_Half_Year">
                                       <GroupExpressions>
-                                        <GroupExpression>=Fields!Nombre_Categoria.Value</GroupExpression>
+                                        <GroupExpression>=Fields!Half_Year.Value</GroupExpression>
                                       </GroupExpressions>
+                                      <Filters>
+                                        <Filter>
+                                          <FilterExpression>=Fields!Unidades.Value</FilterExpression>
+                                          <Operator>TopN</Operator>
+                                          <FilterValues>
+                                            <FilterValue DataType="Integer">5</FilterValue>
+                                          </FilterValues>
+                                        </Filter>
+                                      </Filters>
                                     </Group>
                                     <SortExpressions>
                                       <SortExpression>
-                                        <Value>=Fields!Nombre_Categoria.Value</Value>
+                                        <Value>=Fields!Half_Year.Value</Value>
                                       </SortExpression>
                                     </SortExpressions>
                                     <TablixHeader>
                                       <Size>0.21in</Size>
                                       <CellContents>
-                                        <Textbox Name="Nombre_Categoria">
+                                        <Textbox Name="Half_Year">
                                           <CanGrow>true</CanGrow>
                                           <KeepTogether>true</KeepTogether>
                                           <Paragraphs>
                                             <Paragraph>
                                               <TextRuns>
                                                 <TextRun>
-                                                  <Value>=Fields!Nombre_Categoria.Value</Value>
+                                                  <Value>=Fields!Half_Year.Value</Value>
                                                   <Style>
                                                     <FontFamily />
                                                   </Style>
@@ -378,7 +338,7 @@
                                               </Style>
                                             </Paragraph>
                                           </Paragraphs>
-                                          <rd:DefaultName>Nombre_Categoria</rd:DefaultName>
+                                          <rd:DefaultName>Half_Year</rd:DefaultName>
                                           <Style>
                                             <Border>
                                               <Color>LightGrey</Color>
@@ -392,98 +352,6 @@
                                         </Textbox>
                                       </CellContents>
                                     </TablixHeader>
-                                    <TablixMembers>
-                                      <TablixMember>
-                                        <TablixHeader>
-                                          <Size>0.22in</Size>
-                                          <CellContents>
-                                            <Textbox Name="textbox5">
-                                              <CanGrow>true</CanGrow>
-                                              <KeepTogether>true</KeepTogether>
-                                              <Paragraphs>
-                                                <Paragraph>
-                                                  <TextRuns>
-                                                    <TextRun>
-                                                      <Value>Unidades</Value>
-                                                      <Style>
-                                                        <FontFamily />
-                                                        <FontSize>11pt</FontSize>
-                                                        <FontWeight>Bold</FontWeight>
-                                                        <Color>#666666</Color>
-                                                      </Style>
-                                                    </TextRun>
-                                                  </TextRuns>
-                                                  <Style>
-                                                    <FontFamily />
-                                                    <TextAlign>Right</TextAlign>
-                                                  </Style>
-                                                </Paragraph>
-                                              </Paragraphs>
-                                              <rd:DefaultName>textbox5</rd:DefaultName>
-                                              <Style>
-                                                <Border>
-                                                  <Color>LightGrey</Color>
-                                                </Border>
-                                                <BottomBorder>
-                                                  <Style>Solid</Style>
-                                                </BottomBorder>
-                                                <FontFamily />
-                                                <PaddingLeft>2pt</PaddingLeft>
-                                                <PaddingRight>2pt</PaddingRight>
-                                                <PaddingTop>2pt</PaddingTop>
-                                                <PaddingBottom>2pt</PaddingBottom>
-                                              </Style>
-                                            </Textbox>
-                                          </CellContents>
-                                        </TablixHeader>
-                                        <KeepTogether>true</KeepTogether>
-                                      </TablixMember>
-                                      <TablixMember>
-                                        <TablixHeader>
-                                          <Size>0.22in</Size>
-                                          <CellContents>
-                                            <Textbox Name="textbox6">
-                                              <CanGrow>true</CanGrow>
-                                              <KeepTogether>true</KeepTogether>
-                                              <Paragraphs>
-                                                <Paragraph>
-                                                  <TextRuns>
-                                                    <TextRun>
-                                                      <Value>Costo U</Value>
-                                                      <Style>
-                                                        <FontFamily />
-                                                        <FontSize>11pt</FontSize>
-                                                        <FontWeight>Bold</FontWeight>
-                                                        <Color>#666666</Color>
-                                                      </Style>
-                                                    </TextRun>
-                                                  </TextRuns>
-                                                  <Style>
-                                                    <FontFamily />
-                                                    <TextAlign>Right</TextAlign>
-                                                  </Style>
-                                                </Paragraph>
-                                              </Paragraphs>
-                                              <rd:DefaultName>textbox6</rd:DefaultName>
-                                              <Style>
-                                                <Border>
-                                                  <Color>LightGrey</Color>
-                                                </Border>
-                                                <BottomBorder>
-                                                  <Style>Solid</Style>
-                                                </BottomBorder>
-                                                <FontFamily />
-                                                <PaddingLeft>2pt</PaddingLeft>
-                                                <PaddingRight>2pt</PaddingRight>
-                                                <PaddingTop>2pt</PaddingTop>
-                                                <PaddingBottom>2pt</PaddingBottom>
-                                              </Style>
-                                            </Textbox>
-                                          </CellContents>
-                                        </TablixHeader>
-                                        <KeepTogether>true</KeepTogether>
-                                      </TablixMember>
-                                    </TablixMembers>
                                     <DataElementOutput>Output</DataElementOutput>
                                     <KeepTogether>true</KeepTogether>
                                   </TablixMember>
@@ -492,27 +360,37 @@
                               <TablixRowHierarchy>
                                 <TablixMembers>
                                   <TablixMember>
-                                    <Group Name="matrix1_Nombre_Producto">
+                                    <Group Name="matrix1_Month">
                                       <GroupExpressions>
-                                        <GroupExpression>=Fields!Nombre_Producto.Value</GroupExpression>
+                                        <GroupExpression>=Fields!Month.Value</GroupExpression>
                                       </GroupExpressions>
+                                      <Filters>
+                                        <Filter>
+                                          <FilterExpression>=Fields!Unidades.Value</FilterExpression>
+                                          <Operator>TopN</Operator>
+                                          <FilterValues>
+                                            <FilterValue DataType="Integer">5</FilterValue>
+                                          </FilterValues>
+                                        </Filter>
+                                      </Filters>
                                     </Group>
                                     <SortExpressions>
                                       <SortExpression>
-                                        <Value>=Fields!Nombre_Producto.Value</Value>
+                                        <Value>=Fields!Unidades.Value</Value>
+                                        <Direction>Descending</Direction>
                                       </SortExpression>
                                     </SortExpressions>
                                     <TablixHeader>
                                       <Size>1in</Size>
                                       <CellContents>
-                                        <Textbox Name="Nombre_Producto">
+                                        <Textbox Name="Month">
                                           <CanGrow>true</CanGrow>
                                           <KeepTogether>true</KeepTogether>
                                           <Paragraphs>
                                             <Paragraph>
                                               <TextRuns>
                                                 <TextRun>
-                                                  <Value>=Fields!Nombre_Producto.Value</Value>
+                                                  <Value>=Fields!Month.Value</Value>
                                                   <Style>
                                                     <FontFamily />
                                                   </Style>
@@ -524,7 +402,7 @@
                                               </Style>
                                             </Paragraph>
                                           </Paragraphs>
-                                          <rd:DefaultName>Nombre_Producto</rd:DefaultName>
+                                          <rd:DefaultName>Month</rd:DefaultName>
                                           <Style>
                                             <Border>
                                               <Color>LightGrey</Color>
@@ -547,41 +425,26 @@
                               <RepeatRowHeaders>true</RepeatRowHeaders>
                               <DataSetName>DataSet1</DataSetName>
                               <Top>0.5in</Top>
-                              <Height>0.64in</Height>
-                              <Width>3in</Width>
+                              <Height>0.42in</Height>
+                              <Width>2in</Width>
                               <ZIndex>1</ZIndex>
                               <Style />
                             </Tablix>
-                            <Chart Name="Chart1">
+                            <Chart Name="Chart2">
                               <ChartCategoryHierarchy>
                                 <ChartMembers>
                                   <ChartMember>
-                                    <Group Name="Chart1_CategoryGroup">
+                                    <Group Name="Chart2_CategoryGroup">
                                       <GroupExpressions>
-                                        <GroupExpression>=Fields!Nombre_Categoria.Value</GroupExpression>
+                                        <GroupExpression>=Fields!Month.Value</GroupExpression>
                                       </GroupExpressions>
                                     </Group>
                                     <SortExpressions>
                                       <SortExpression>
-                                        <Value>=Fields!Nombre_Categoria.Value</Value>
+                                        <Value>=Fields!Month.Value</Value>
                                       </SortExpression>
                                     </SortExpressions>
-                                    <ChartMembers>
-                                      <ChartMember>
-                                        <Group Name="Chart1_CategoryGroup1">
-                                          <GroupExpressions>
-                                            <GroupExpression>=Fields!Nombre_Producto.Value</GroupExpression>
-                                          </GroupExpressions>
-                                        </Group>
-                                        <SortExpressions>
-                                          <SortExpression>
-                                            <Value>=Fields!Nombre_Producto.Value</Value>
-                                          </SortExpression>
-                                        </SortExpressions>
-                                        <Label>=Fields!Nombre_Producto.Value</Label>
-                                      </ChartMember>
-                                    </ChartMembers>
-                                    <Label>=Fields!Nombre_Categoria.Value</Label>
+                                    <Label>=Fields!Month.Value</Label>
                                   </ChartMember>
                                 </ChartMembers>
                               </ChartCategoryHierarchy>
@@ -610,6 +473,7 @@
                                         <DataElementOutput>Output</DataElementOutput>
                                       </ChartDataPoint>
                                     </ChartDataPoints>
+                                    <Type>Shape</Type>
                                     <Style />
                                     <ChartEmptyPoints>
                                       <Style />
@@ -867,7 +731,6 @@
                                     <BackgroundGradientType>None</BackgroundGradientType>
                                     <FontSize>8pt</FontSize>
                                   </Style>
-                                  <Position>TopLeft</Position>
                                   <ChartLegendTitle>
                                     <Caption />
                                     <Style>
@@ -882,7 +745,7 @@
                               </ChartLegends>
                               <ChartTitles>
                                 <ChartTitle Name="Default">
-                                  <Caption>Gráfica del total de unidades compradas</Caption>
+                                  <Caption>Meses dónde se han comprado más unidades</Caption>
                                   <Style>
                                     <BackgroundGradientType>None</BackgroundGradientType>
                                     <FontSize>9pt</FontSize>
@@ -912,8 +775,8 @@
                                 </Style>
                               </ChartNoDataMessage>
                               <DataSetName>DataSet1</DataSetName>
-                              <Top>0.32556in</Top>
-                              <Left>3.19792in</Left>
+                              <Top>0.5in</Top>
+                              <Left>2.2175in</Left>
                               <Height>2in</Height>
                               <Width>3in</Width>
                               <ZIndex>2</ZIndex>
@@ -944,26 +807,17 @@
             <TablixRowHierarchy>
               <TablixMembers>
                 <TablixMember>
-                  <Group Name="list1_Nombre_Sucursal">
+                  <Group Name="list1_Year">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!Nombre_Sucursal.Value</GroupExpression>
+                      <GroupExpression>=Fields!Half_Year.Value</GroupExpression>
                     </GroupExpressions>
                     <PageBreak>
                       <BreakLocation>Between</BreakLocation>
                     </PageBreak>
-                    <Filters>
-                      <Filter>
-                        <FilterExpression>=Fields!Costo_U.Value</FilterExpression>
-                        <Operator>TopN</Operator>
-                        <FilterValues>
-                          <FilterValue DataType="Integer">5</FilterValue>
-                        </FilterValues>
-                      </Filter>
-                    </Filters>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!Unidades.Value</Value>
+                      <Value>=Fields!Half_Year.Value</Value>
                       <Direction>Descending</Direction>
                     </SortExpression>
                   </SortExpressions>
@@ -977,18 +831,18 @@
               <BreakLocation>End</BreakLocation>
             </PageBreak>
             <Top>0.43in</Top>
-            <Height>2.32556in</Height>
-            <Width>6.19792in</Width>
+            <Height>3.6625in</Height>
+            <Width>6.08208in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <FontSize>14pt</FontSize>
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>3.88417in</Height>
+        <Height>4.0925in</Height>
         <Style />
       </Body>
-      <Width>6.42709in</Width>
+      <Width>6.08208in</Width>
       <Page>
         <LeftMargin>1in</LeftMargin>
         <RightMargin>1in</RightMargin>
@@ -1007,5 +861,5 @@
   <Language>en-US</Language>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
-  <rd:ReportID>34d486dd-220c-4ac0-aefc-b47876bcea01</rd:ReportID>
+  <rd:ReportID>77e1002b-b934-428a-993b-9c5714a75f62</rd:ReportID>
 </Report>
