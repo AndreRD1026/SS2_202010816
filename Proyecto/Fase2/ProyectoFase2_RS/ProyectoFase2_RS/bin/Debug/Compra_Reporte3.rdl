@@ -376,7 +376,7 @@
                                     </Group>
                                     <SortExpressions>
                                       <SortExpression>
-                                        <Value>=Fields!Unidades.Value</Value>
+                                        <Value>=Sum(Fields!Unidades.Value)</Value>
                                         <Direction>Descending</Direction>
                                       </SortExpression>
                                     </SortExpressions>
@@ -775,6 +775,15 @@
                                 </Style>
                               </ChartNoDataMessage>
                               <DataSetName>DataSet1</DataSetName>
+                              <Filters>
+                                <Filter>
+                                  <FilterExpression>=Fields!Unidades.Value</FilterExpression>
+                                  <Operator>TopN</Operator>
+                                  <FilterValues>
+                                    <FilterValue DataType="Integer">10</FilterValue>
+                                  </FilterValues>
+                                </Filter>
+                              </Filters>
                               <Top>0.5in</Top>
                               <Left>2.2175in</Left>
                               <Height>2in</Height>

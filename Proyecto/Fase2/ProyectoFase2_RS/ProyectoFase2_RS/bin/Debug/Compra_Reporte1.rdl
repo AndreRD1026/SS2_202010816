@@ -17,7 +17,7 @@
     <DataSet Name="DataSet1">
       <Query>
         <DataSourceName>DataSource1</DataSourceName>
-        <CommandText>SELECT NON EMPTY { [Measures].[Costo U] } ON COLUMNS, NON EMPTY { ([Fecha_Compra].[Year -  Half Year -  Month -  Date].[Date].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [Cubo_Compra] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</CommandText>
+        <CommandText> SELECT NON EMPTY { [Measures].[Costo U], [Measures].[Unidades] } ON COLUMNS, NON EMPTY { ([Fecha_Compra].[Year -  Half Year -  Month -  Date].[Date].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [Cubo_Compra] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</CommandText>
         <rd:DesignerState>
           <QueryDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition">
             <CommandType>MDX</CommandType>
@@ -84,6 +84,22 @@
                     <FormattedValue>true</FormattedValue>
                     <FormatString>true</FormatString>
                   </Item>
+                  <Item>
+                    <ID xsi:type="Measure">
+                      <MeasureName>Unidades</MeasureName>
+                      <UniqueName>[Measures].[Unidades]</UniqueName>
+                    </ID>
+                    <ItemCaption>Unidades</ItemCaption>
+                    <BackColor>true</BackColor>
+                    <ForeColor>true</ForeColor>
+                    <FontFamily>true</FontFamily>
+                    <FontSize>true</FontSize>
+                    <FontWeight>true</FontWeight>
+                    <FontStyle>true</FontStyle>
+                    <FontDecoration>true</FontDecoration>
+                    <FormattedValue>true</FormattedValue>
+                    <FormatString>true</FormatString>
+                  </Item>
                 </Items>
               </Select>
               <AutoExecute>false</AutoExecute>
@@ -98,7 +114,7 @@
               </QueryProperties>
             </QuerySpecification>
             <Query>
-              <Statement> SELECT NON EMPTY { [Measures].[Costo U] } ON COLUMNS, NON EMPTY { ([Fecha_Compra].[Year -  Half Year -  Month -  Date].[Date].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [Cubo_Compra] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</Statement>
+              <Statement> SELECT NON EMPTY { [Measures].[Costo U], [Measures].[Unidades] } ON COLUMNS, NON EMPTY { ([Fecha_Compra].[Year -  Half Year -  Month -  Date].[Date].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_VALUE, MEMBER_UNIQUE_NAME ON ROWS FROM [Cubo_Compra] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</Statement>
               <ParameterDefinitions />
             </Query>
           </QueryDefinition>
@@ -123,6 +139,10 @@
         </Field>
         <Field Name="Costo_U">
           <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Costo U]" /&gt;</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Unidades">
+          <DataField>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="Measure" UniqueName="[Measures].[Unidades]" /&gt;</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
       </Fields>
@@ -241,10 +261,50 @@
                                       </CellContents>
                                     </TablixCornerCell>
                                   </TablixCornerRow>
+                                  <TablixCornerRow>
+                                    <TablixCornerCell>
+                                      <CellContents>
+                                        <Textbox Name="Textbox4">
+                                          <CanGrow>true</CanGrow>
+                                          <KeepTogether>true</KeepTogether>
+                                          <Paragraphs>
+                                            <Paragraph>
+                                              <TextRuns>
+                                                <TextRun>
+                                                  <Value />
+                                                  <Style>
+                                                    <FontFamily />
+                                                    <Color>#333333</Color>
+                                                  </Style>
+                                                </TextRun>
+                                              </TextRuns>
+                                              <Style />
+                                            </Paragraph>
+                                          </Paragraphs>
+                                          <rd:DefaultName>Textbox4</rd:DefaultName>
+                                          <Style>
+                                            <Border>
+                                              <Color>LightGrey</Color>
+                                            </Border>
+                                            <PaddingLeft>2pt</PaddingLeft>
+                                            <PaddingRight>2pt</PaddingRight>
+                                            <PaddingTop>2pt</PaddingTop>
+                                            <PaddingBottom>2pt</PaddingBottom>
+                                          </Style>
+                                        </Textbox>
+                                      </CellContents>
+                                    </TablixCornerCell>
+                                  </TablixCornerRow>
                                 </TablixCornerRows>
                               </TablixCorner>
                               <TablixBody>
                                 <TablixColumns>
+                                  <TablixColumn>
+                                    <Width>1in</Width>
+                                  </TablixColumn>
+                                  <TablixColumn>
+                                    <Width>1in</Width>
+                                  </TablixColumn>
                                   <TablixColumn>
                                     <Width>1in</Width>
                                   </TablixColumn>
@@ -255,7 +315,7 @@
                                     <TablixCells>
                                       <TablixCell>
                                         <CellContents>
-                                          <Textbox Name="textbox2">
+                                          <Textbox Name="Costo_U">
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
@@ -272,7 +332,7 @@
                                                 <Style />
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>textbox2</rd:DefaultName>
+                                            <rd:DefaultName>Costo_U</rd:DefaultName>
                                             <Style>
                                               <Border>
                                                 <Color>LightGrey</Color>
@@ -281,6 +341,78 @@
                                                 <Style>Solid</Style>
                                               </BottomBorder>
                                               <FontFamily />
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                        <DataElementOutput>Output</DataElementOutput>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Textbox11">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>=Sum(Fields!Unidades.Value)</Value>
+                                                    <Style>
+                                                      <FontFamily />
+                                                      <Color>#333333</Color>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox11</rd:DefaultName>
+                                            <Style>
+                                              <Border>
+                                                <Color>LightGrey</Color>
+                                              </Border>
+                                              <BottomBorder>
+                                                <Style>Solid</Style>
+                                              </BottomBorder>
+                                              <PaddingLeft>2pt</PaddingLeft>
+                                              <PaddingRight>2pt</PaddingRight>
+                                              <PaddingTop>2pt</PaddingTop>
+                                              <PaddingBottom>2pt</PaddingBottom>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                        <DataElementOutput>Output</DataElementOutput>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Textbox14">
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>=Sum(Fields!Costo_U.Value)*Sum(Fields!Costo_U.Value)</Value>
+                                                    <Style>
+                                                      <FontFamily />
+                                                      <Color>#333333</Color>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style />
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <rd:DefaultName>Textbox14</rd:DefaultName>
+                                            <Style>
+                                              <Border>
+                                                <Color>LightGrey</Color>
+                                              </Border>
+                                              <BottomBorder>
+                                                <Style>Solid</Style>
+                                              </BottomBorder>
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
                                               <PaddingTop>2pt</PaddingTop>
@@ -353,6 +485,116 @@
                                         </Textbox>
                                       </CellContents>
                                     </TablixHeader>
+                                    <TablixMembers>
+                                      <TablixMember>
+                                        <TablixHeader>
+                                          <Size>0.25in</Size>
+                                          <CellContents>
+                                            <Textbox Name="Textbox5">
+                                              <CanGrow>true</CanGrow>
+                                              <KeepTogether>true</KeepTogether>
+                                              <Paragraphs>
+                                                <Paragraph>
+                                                  <TextRuns>
+                                                    <TextRun>
+                                                      <Value>Costo U</Value>
+                                                      <Style>
+                                                        <FontFamily />
+                                                      </Style>
+                                                    </TextRun>
+                                                  </TextRuns>
+                                                  <Style>
+                                                    <TextAlign>Left</TextAlign>
+                                                  </Style>
+                                                </Paragraph>
+                                              </Paragraphs>
+                                              <rd:DefaultName>Textbox5</rd:DefaultName>
+                                              <Style>
+                                                <Border>
+                                                  <Color>LightGrey</Color>
+                                                </Border>
+                                                <PaddingLeft>2pt</PaddingLeft>
+                                                <PaddingRight>2pt</PaddingRight>
+                                                <PaddingTop>2pt</PaddingTop>
+                                                <PaddingBottom>2pt</PaddingBottom>
+                                              </Style>
+                                            </Textbox>
+                                          </CellContents>
+                                        </TablixHeader>
+                                      </TablixMember>
+                                      <TablixMember>
+                                        <TablixHeader>
+                                          <Size>0.25in</Size>
+                                          <CellContents>
+                                            <Textbox Name="Textbox10">
+                                              <CanGrow>true</CanGrow>
+                                              <KeepTogether>true</KeepTogether>
+                                              <Paragraphs>
+                                                <Paragraph>
+                                                  <TextRuns>
+                                                    <TextRun>
+                                                      <Value>Unidades</Value>
+                                                      <Style>
+                                                        <FontFamily />
+                                                      </Style>
+                                                    </TextRun>
+                                                  </TextRuns>
+                                                  <Style>
+                                                    <TextAlign>Left</TextAlign>
+                                                  </Style>
+                                                </Paragraph>
+                                              </Paragraphs>
+                                              <rd:DefaultName>Textbox10</rd:DefaultName>
+                                              <Style>
+                                                <Border>
+                                                  <Color>LightGrey</Color>
+                                                </Border>
+                                                <PaddingLeft>2pt</PaddingLeft>
+                                                <PaddingRight>2pt</PaddingRight>
+                                                <PaddingTop>2pt</PaddingTop>
+                                                <PaddingBottom>2pt</PaddingBottom>
+                                              </Style>
+                                            </Textbox>
+                                          </CellContents>
+                                        </TablixHeader>
+                                      </TablixMember>
+                                      <TablixMember>
+                                        <TablixHeader>
+                                          <Size>0.25in</Size>
+                                          <CellContents>
+                                            <Textbox Name="Textbox13">
+                                              <CanGrow>true</CanGrow>
+                                              <KeepTogether>true</KeepTogether>
+                                              <Paragraphs>
+                                                <Paragraph>
+                                                  <TextRuns>
+                                                    <TextRun>
+                                                      <Value>Subtotal</Value>
+                                                      <Style>
+                                                        <FontFamily />
+                                                      </Style>
+                                                    </TextRun>
+                                                  </TextRuns>
+                                                  <Style>
+                                                    <TextAlign>Left</TextAlign>
+                                                  </Style>
+                                                </Paragraph>
+                                              </Paragraphs>
+                                              <rd:DefaultName>Textbox13</rd:DefaultName>
+                                              <Style>
+                                                <Border>
+                                                  <Color>LightGrey</Color>
+                                                </Border>
+                                                <PaddingLeft>2pt</PaddingLeft>
+                                                <PaddingRight>2pt</PaddingRight>
+                                                <PaddingTop>2pt</PaddingTop>
+                                                <PaddingBottom>2pt</PaddingBottom>
+                                              </Style>
+                                            </Textbox>
+                                          </CellContents>
+                                        </TablixHeader>
+                                      </TablixMember>
+                                    </TablixMembers>
                                     <DataElementOutput>Output</DataElementOutput>
                                     <KeepTogether>true</KeepTogether>
                                   </TablixMember>
@@ -377,7 +619,8 @@
                                     </Group>
                                     <SortExpressions>
                                       <SortExpression>
-                                        <Value>=Fields!Costo_U.Value</Value>
+                                        <Value>=Sum(Fields!Unidades.Value)</Value>
+                                        <Direction>Descending</Direction>
                                       </SortExpression>
                                     </SortExpressions>
                                     <TablixHeader>
@@ -425,8 +668,8 @@
                               <RepeatRowHeaders>true</RepeatRowHeaders>
                               <DataSetName>DataSet1</DataSetName>
                               <Top>0.5in</Top>
-                              <Height>0.42in</Height>
-                              <Width>2in</Width>
+                              <Height>0.67in</Height>
+                              <Width>4in</Width>
                               <ZIndex>1</ZIndex>
                               <Style />
                             </Tablix>
@@ -438,6 +681,15 @@
                                       <GroupExpressions>
                                         <GroupExpression>=Fields!Month.Value</GroupExpression>
                                       </GroupExpressions>
+                                      <Filters>
+                                        <Filter>
+                                          <FilterExpression>=Fields!Unidades.Value</FilterExpression>
+                                          <Operator>TopN</Operator>
+                                          <FilterValues>
+                                            <FilterValue DataType="Integer">5</FilterValue>
+                                          </FilterValues>
+                                        </Filter>
+                                      </Filters>
                                     </Group>
                                     <SortExpressions>
                                       <SortExpression>
@@ -457,14 +709,15 @@
                               </ChartSeriesHierarchy>
                               <ChartData>
                                 <ChartSeriesCollection>
-                                  <ChartSeries Name="Costo_U">
+                                  <ChartSeries Name="Unidades">
                                     <ChartDataPoints>
                                       <ChartDataPoint>
                                         <ChartDataPointValues>
-                                          <Y>=Sum(Fields!Costo_U.Value)</Y>
+                                          <Y>=Sum(Fields!Unidades.Value)*Sum(Fields!Costo_U.Value)</Y>
                                         </ChartDataPointValues>
                                         <ChartDataLabel>
                                           <Style />
+                                          <UseValueAsLabel>true</UseValueAsLabel>
                                         </ChartDataLabel>
                                         <Style />
                                         <ChartMarker>
@@ -777,15 +1030,15 @@
                               <DataSetName>DataSet1</DataSetName>
                               <Filters>
                                 <Filter>
-                                  <FilterExpression>=Fields!Costo_U.Value</FilterExpression>
+                                  <FilterExpression>=Fields!Unidades.Value</FilterExpression>
                                   <Operator>TopN</Operator>
                                   <FilterValues>
-                                    <FilterValue DataType="Integer">6</FilterValue>
+                                    <FilterValue DataType="Integer">10</FilterValue>
                                   </FilterValues>
                                 </Filter>
                               </Filters>
                               <Top>0.5in</Top>
-                              <Left>2.19319in</Left>
+                              <Left>4.40278in</Left>
                               <Height>2in</Height>
                               <Width>3in</Width>
                               <ZIndex>2</ZIndex>
