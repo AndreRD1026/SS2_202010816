@@ -696,21 +696,6 @@
                                         <Value>=Fields!Month.Value</Value>
                                       </SortExpression>
                                     </SortExpressions>
-                                    <ChartMembers>
-                                      <ChartMember>
-                                        <Group Name="Chart1_CategoryGroup1">
-                                          <GroupExpressions>
-                                            <GroupExpression>=Fields!Half_Year.Value</GroupExpression>
-                                          </GroupExpressions>
-                                        </Group>
-                                        <SortExpressions>
-                                          <SortExpression>
-                                            <Value>=Fields!Half_Year.Value</Value>
-                                          </SortExpression>
-                                        </SortExpressions>
-                                        <Label>=Fields!Half_Year.Value</Label>
-                                      </ChartMember>
-                                    </ChartMembers>
                                     <Label>=Fields!Month.Value</Label>
                                   </ChartMember>
                                 </ChartMembers>
@@ -1012,7 +997,7 @@
                               </ChartLegends>
                               <ChartTitles>
                                 <ChartTitle Name="Default">
-                                  <Caption>Chart Title</Caption>
+                                  <Caption>Gráfica de los meses con mayor ingreso</Caption>
                                   <Style>
                                     <BackgroundGradientType>None</BackgroundGradientType>
                                     <FontSize>9pt</FontSize>
@@ -1044,10 +1029,10 @@
                               <DataSetName>DataSet1</DataSetName>
                               <Filters>
                                 <Filter>
-                                  <FilterExpression>=Fields!Unidades.Value</FilterExpression>
+                                  <FilterExpression>=Fields!Precio_Unitario.Value</FilterExpression>
                                   <Operator>TopN</Operator>
                                   <FilterValues>
-                                    <FilterValue DataType="Integer">7</FilterValue>
+                                    <FilterValue DataType="Integer">14</FilterValue>
                                   </FilterValues>
                                 </Filter>
                               </Filters>
