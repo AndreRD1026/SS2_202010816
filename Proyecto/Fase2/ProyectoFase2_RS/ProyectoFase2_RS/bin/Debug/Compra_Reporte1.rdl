@@ -609,7 +609,7 @@
                                       </GroupExpressions>
                                       <Filters>
                                         <Filter>
-                                          <FilterExpression>=Fields!Costo_U.Value</FilterExpression>
+                                          <FilterExpression>=Sum(Fields!Costo_U.Value)*Sum(Fields!Unidades.Value)</FilterExpression>
                                           <Operator>TopN</Operator>
                                           <FilterValues>
                                             <FilterValue DataType="Integer">5</FilterValue>
